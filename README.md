@@ -4,7 +4,7 @@ generate_met_data.R uses rgee to generate an extract combining ERA5 with RTMA, s
 
 Here is how generate_met_data.R, load_met_data.R, and extact_met_data.R work in combination, as R code:
 
-`source(paste0(script_path,"generate_met_data.R")) # Calls Google Earth Engine (GEE)
+source(paste0(script_path,"generate_met_data.R")) # Calls Google Earth Engine (GEE)
 source(paste0(script_path,"load_met_data.R")) # Retrieves the result from GEE
 source(paste0(script_path,"extract_met_data.R")) # Processes and formats the data for SOLWEIG
    generate_met_data(site) # Extracts met data at centroid of project area
